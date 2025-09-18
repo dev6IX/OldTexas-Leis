@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Código Penal — Old Texas</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(180deg, #0f0f0f, #1a1a1a);
+      color: #f1f1f1;
+    }
+    header {
+      position: relative;
+      top: 0;
+      width: 100%;
+      text-align: center;
+      background: rgba(15, 15, 15, 0.95);
+      padding: 20px 0;
+      z-index: 1000;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.8);
+    }
+    header img {
+      height: 90px;
+      border-radius: 50%;
+      animation: glow 3s infinite ease-in-out;
+      transition: transform 0.3s;
+    }
+    header img:hover {
+      transform: scale(1.05);
+    }
+    @keyframes glow {
+      0% { box-shadow: 0 0 10px #ffcc66, 0 0 20px #ffcc66; }
+      50% { box-shadow: 0 0 20px #ffaa33, 0 0 40px #ffcc66; }
+      100% { box-shadow: 0 0 10px #ffcc66, 0 0 20px #ffcc66; }
+    }
+    header h1 {
+      font-size: 1.8rem;
+      color: #ffcc66;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .container {
+      display: flex;
+      margin-top: 160px;
+      padding: 20px;
+    }
+    nav {
+      width: 300px;
+      background: rgba(30, 30, 30, 0.95);
+      padding: 20px;
+      border-radius: 12px;
+      margin-right: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+      height: fit-content;
+    }
+    nav h2 {
+      color: #ffcc66;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    nav input {
+      width: 100%;
+      padding: 8px;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      margin-bottom: 15px;
+      background: #444;
+      color: #fff;
+    }
+    nav a {
+      display: block;
+      width: 100%;
+      background: #444;
+      color: #fff;
+      padding: 10px;
+      margin: 6px 0;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.2s, transform 0.2s;
+    }
+    nav a:hover {
+      background: #ffcc66;
+      color: #000;
+      transform: translateX(5px);
+    }
+    main {
+      flex: 1;
+      background: rgba(25, 25, 25, 0.95);
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+    }
+    h2.section-title {
+      border-bottom: 2px solid #ffcc66;
+      padding-bottom: 8px;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      font-size: 1.3rem;
+      color: #ffcc66;
+    }
+    .article {
+      background: #2b2b2b;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .article:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 12px #ffcc66;
+    }
+    .article b {
+      font-size: 1.05rem;
+      color: #fff;
+    }
+    .tags {
+      display: flex;
+      gap: 8px;
+    }
+    .tag {
+      padding: 4px 8px;
+      border-radius: 12px;
+      font-weight: bold;
+      font-size: 0.9rem;
+      color: #000;
+    }
+    .tag.money { background: #66ff66; }
+    .tag.time-short { background: #ffcc66; }
+    .tag.time-long { background: #ff6666; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://images-ext-1.discordapp.net/external/jbynmsJ9k3Ji-P-4zX3IAXZiqzVITMFlWxsVMYV41eU/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/1362187286296527119/bbace298fe0fb95bacaac4b2b7e79b56.webp?format=webp&width=960&height=960" alt="Logo Old Texas">
+    <h1>Código Penal — Old Texas</h1>
+  </header>
+  <div class="container">
+    <nav>
+      <h2>Índice</h2>
+      <input type="text" placeholder="Pesquisar artigos...">
+      <a href="#sec1">Seção I — Da Ordem e Decoro Público</a>
+      <a href="#sec2">Seção II — Dos Danos à Propriedade</a>
+      <a href="#sec3">Seção III — Da Honra e Autoridade</a>
+      <a href="#sec4">Seção IV — Documentos e Identificação</a>
+      <a href="#sec5">Seção V — Boa Conduta e Costumes</a>
+      <a href="#sec6">Seção VI — Crimes contra a Vida...</a>
+      <a href="#sec7">Seção VII — Crimes contra Justiça</a>
+      <a href="#sec8">Seção VIII — Crimes de Tráfico</a>
+    </nav>
+    <main>
+      <!-- Secção I -->
+      <h2 id="sec1" class="section-title">Seção I — Da Ordem e Decoro Público</h2>
+      <div class="article"><b>Art. 1.º</b> — Perturbação da ordem em locais públicos <div class="tags"><span class="tag money">50$</span><span class="tag time-short">15 meses</span></div></div>
+      <div class="article"><b>Art. 2.º</b> — Embriaguez em via pública <div class="tags"><span class="tag money">30$</span><span class="tag time-short">10 meses</span></div></div>
+      <div class="article"><b>Art. 3.º</b> — Palavras indecorosas/ofensivas <div class="tags"><span class="tag money">25$</span><span class="tag time-short">5 meses</span></div></div>
+      <div class="article"><b>Art. 4.º</b> — Montar cavalgadura em zona urbana <div class="tags"><span class="tag money">40$</span><span class="tag time-short">12 meses</span></div></div>
+      <div class="article"><b>Art. 5.º</b> — Duelo ou desafio público <div class="tags"><span class="tag money">100$</span><span class="tag time-long">45 meses</span></div></div>
+      <div class="article"><b>Art. 6.º</b> — Exibição indecente/nudez pública <div class="tags"><span class="tag money">75$</span><span class="tag time-short">30 meses</span></div></div>
+      <div class="article"><b>Art. 7.º</b> — Ruídos noturnos com instrumentos <div class="tags"><span class="tag money">30$</span><span class="tag time-short">8 meses</span></div></div>
+      <div class="article"><b>Art. 8.º</b> — Festas/ajuntamentos não autorizados <div class="tags"><span class="tag money">50$</span><span class="tag time-short">15 meses</span></div></div>
+      <div class="article"><b>Art. 9.º</b> — Mendicância agressiva <div class="tags"><span class="tag money">25$</span><span class="tag time-short">6 meses</span></div></div>
+      <div class="article"><b>Art. 10.º</b> — Fogueiras em zona urbana sem licença <div class="tags"><span class="tag money">40$</span><span class="tag time-short">12 meses</span></div></div>
+
+      <!-- Secção II -->
+      <h2 id="sec2" class="section-title">Seção II — Dos Danos à Propriedade</h2>
+      <div class="article"><b>Art. 11.º</b> — Danos em bens alheios <div class="tags"><span class="tag money">50-100$</span><span class="tag time-short">25-50 meses</span></div></div>
+      <div class="article"><b>Art. 12.º</b> — Lixo em locais públicos <div class="tags"><span class="tag money">20$</span><span class="tag time-short">5 meses</span></div></div>
+      <div class="article"><b>Art. 13.º</b> — Subir a edifícios sem permissão <div class="tags"><span class="tag money">25$</span><span class="tag time-short">6 meses</span></div></div>
+      <div class="article"><b>Art. 14.º</b> — Pichagens <div class="tags"><span class="tag money">40$</span><span class="tag time-short">20 meses</span></div></div>
+      <div class="article"><b>Art. 15.º</b> — Derrubar cercas, postes ou sinais <div class="tags"><span class="tag money">60$</span><span class="tag time-long">28 meses</span></div></div>
+      <div class="article"><b>Art. 16.º</b> — Roubo de colheitas/animais pequenos <div class="tags"><span class="tag money">100$</span><span class="tag time-long">60 meses</span></div></div>
+      <div class="article"><b>Art. 17.º</b> — Uso indevido de poço/fonte <div class="tags"><span class="tag money">30$</span><span class="tag time-short">10 meses</span></div></div>
+      <div class="article"><b>Art. 18.º</b> — Entrar em propriedade sem permissão <div class="tags"><span class="tag money">25$</span><span class="tag time-short">6 meses</span></div></div>
+      <div class="article"><b>Art. 19.º</b> — Poluição de ribeiros/tanques <div class="tags"><span class="tag money">50$</span><span class="tag time-long">25 meses</span></div></div>
+      <div class="article"><b>Art. 20.º</b> — Excesso de animais na zona urbana <div class="tags"><span class="tag money">40$</span><span class="tag time-short">15 meses</span></div></div>
+
+      <!-- Secção III -->
+      <h2 id="sec3" class="section-title">Seção III — Da Honra e Autoridade</h2>
+      <div class="article"><b>Art. 21.º</b> — Injúrias públicas <div class="tags"><span class="tag money">30$</span><span class="tag time-short">10 meses</span></div></div>
+      <div class="article"><b>Art. 22.º</b> — Desobediência à autoridade <div class="tags"><span class="tag money">50$</span><span class="tag time-short">20 meses</span></div></div>
+      <div class="article"><b>Art. 23.º</b> — Falsas declarações <div class="tags"><span class="tag money">75$</span><span class="tag time-long">35 meses</span></div></div>
+      <div class="article"><b>Art. 24.º</b> — Recusa de identificação <div class="tags"><span class="tag money">60$</span><span class="tag time-long">22 meses</span></div></div>
+      <div class="article"><b>Art. 25.º</b> — Ameaça a agente público <div class="tags"><span class="tag money">100$</span><span class="tag time-long">60 meses</span></div></div>
+      <div class="article"><b>Art. 26.º</b> — Atrapalhar prisão <div class="tags"><span class="tag money">75$</span><span class="tag time-long">40 meses</span></div></div>
+      <div class="article"><b>Art. 27.º</b> — Desacato em tribunal <div class="tags"><span class="tag money">100$</span><span class="tag time-long">50 meses</span></div></div>
+      <div class="article"><b>Art. 28.º</b> — Simular função pública <div class="tags"><span class="tag money">60$</span><span class="tag time-short">30 meses</span></div></div>
+      <div class="article"><b>Art. 29.º</b> — Abandono de posto público <div class="tags"><span class="tag money">40$</span><span class="tag time-short">12 meses</span></div></div>
+      <div class="article"><b>Art. 30.º</b> — Queixa caluniosa <div class="tags"><span class="tag money">50$</span><span class="tag time-short">25 meses</span></div></div>
+
+      <!-- Secções IV a VIII ficam aqui no mesmo padrão -->
+             <!-- Secção IV -->
+      <h2 id="sec4" class="section-title">Seção IV — Documentos e Identificação</h2>
+      <div class="article"><b>Art. 31.º</b> — Portar documentos falsos <div class="tags"><span class="tag money">100$</span><span class="tag time-long">50 meses</span></div></div>
+      <div class="article"><b>Art. 32.º</b> — Uso indevido de identidade alheia <div class="tags"><span class="tag money">75$</span><span class="tag time-long">35 meses</span></div></div>
+      <div class="article"><b>Art. 33.º</b> — Falsificação de documentos oficiais <div class="tags"><span class="tag money">120$</span><span class="tag time-long">60 meses</span></div></div>
+      <div class="article"><b>Art. 34.º</b> — Recusa de apresentar documentos <div class="tags"><span class="tag money">40$</span><span class="tag time-short">15 meses</span></div></div>
+
+      <!-- Secção V -->
+      <h2 id="sec5" class="section-title">Seção V — Boa Conduta e Costumes</h2>
+      <div class="article"><b>Art. 35.º</b> — Vadiagem prolongada <div class="tags"><span class="tag money">30$</span><span class="tag time-short">10 meses</span></div></div>
+      <div class="article"><b>Art. 36.º</b> — Jogos ilegais <div class="tags"><span class="tag money">60$</span><span class="tag time-short">20 meses</span></div></div>
+      <div class="article"><b>Art. 37.º</b> — Exploração de casa de má fama <div class="tags"><span class="tag money">100$</span><span class="tag time-long">45 meses</span></div></div>
+      <div class="article"><b>Art. 38.º</b> — Ofensas à moral pública <div class="tags"><span class="tag money">40$</span><span class="tag time-short">12 meses</span></div></div>
+
+      <!-- Secção VI -->
+      <h2 id="sec6" class="section-title">Seção VI — Crimes contra a Vida e Integridade</h2>
+      <div class="article"><b>Art. 39.º</b> — Lesões corporais leves <div class="tags"><span class="tag money">60$</span><span class="tag time-short">20 meses</span></div></div>
+      <div class="article"><b>Art. 40.º</b> — Lesões corporais graves <div class="tags"><span class="tag money">120$</span><span class="tag time-long">60 meses</span></div></div>
+      <div class="article"><b>Art. 41.º</b> — Homicídio culposo <div class="tags"><span class="tag money">200$</span><span class="tag time-long">100 meses</span></div></div>
+      <div class="article"><b>Art. 42.º</b> — Homicídio doloso <div class="tags"><span class="tag money">400$</span><span class="tag time-long">200 meses</span></div></div>
+      <div class="article"><b>Art. 43.º</b> — Tentativa de homicídio <div class="tags"><span class="tag money">250$</span><span class="tag time-long">120 meses</span></div></div>
+      <div class="article"><b>Art. 44.º</b> — Envenenamento de animais <div class="tags"><span class="tag money">75$</span><span class="tag time-long">35 meses</span></div></div>
+
+      <!-- Secção VII -->
+      <h2 id="sec7" class="section-title">Seção VII — Crimes contra a Justiça</h2>
+      <div class="article"><b>Art. 45.º</b> — Favorecimento pessoal <div class="tags"><span class="tag money">60$</span><span class="tag time-short">25 meses</span></div></div>
+      <div class="article"><b>Art. 46.º</b> — Quebra de prisão <div class="tags"><span class="tag money">150$</span><span class="tag time-long">80 meses</span></div></div>
+      <div class="article"><b>Art. 47.º</b> — Auxílio à fuga <div class="tags"><span class="tag money">100$</span><span class="tag time-long">60 meses</span></div></div>
+      <div class="article"><b>Art. 48.º</b> — Corrupção ativa <div class="tags"><span class="tag money">200$</span><span class="tag time-long">100 meses</span></div></div>
+      <div class="article"><b>Art. 49.º</b> — Corrupção passiva <div class="tags"><span class="tag money">200$</span><span class="tag time-long">100 meses</span></div></div>
+      <div class="article"><b>Art. 50.º</b> — Ocultação de provas <div class="tags"><span class="tag money">120$</span><span class="tag time-long">55 meses</span></div></div>
+
+      <!-- Secção VIII -->
+      <h2 id="sec8" class="section-title">Seção VIII — Crimes de Tráfico e Associação</h2>
+      <div class="article"><b>Art. 51.º</b> — Tráfico de armas <div class="tags"><span class="tag money">300$</span><span class="tag time-long">150 meses</span></div></div>
+      <div class="article"><b>Art. 52.º</b> — Tráfico de munições <div class="tags"><span class="tag money">200$</span><span class="tag time-long">120 meses</span></div></div>
+      <div class="article"><b>Art. 53.º</b> — Tráfico de substâncias ilícitas <div class="tags"><span class="tag money">400$</span><span class="tag time-long">200 meses</span></div></div>
+      <div class="article"><b>Art. 54.º</b> — Associação criminosa <div class="tags"><span class="tag money">350$</span><span class="tag time-long">180 meses</span></div></div>
+      <div class="article"><b>Art. 55.º</b> — Organização criminosa <div class="tags"><span class="tag money">500$</span><span class="tag time-long">250 meses</span></div></div>
+      <div class="article"><b>Art. 56.º</b> — Contrabando de mercadorias <div class="tags"><span class="tag money">250$</span><span class="tag time-long">120 meses</span></div></div>
+
+    </main>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
